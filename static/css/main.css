@@ -1,0 +1,178 @@
+/* Exportação e configuração das fontes utilizadas */
+
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lexend+Deca:wght@100..900&display=swap");
+
+.italiana-regular {
+  font-family: "Italiana", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lexend-deca {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* CSS padrão */
+
+html {
+  background-color: #fdd692;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 3% 0 3%;
+  font-family: Lexend Deca;
+}
+
+.title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #754f44;
+  height: 4em;
+  border-radius: 10px;
+  margin: 2em 0 0 0;
+}
+
+.title-text {
+  font-family: Italiana;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e1ce7a;
+  width: 50%;
+  height: 2em;
+}
+
+.title-sub {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  margin: 10px 0 0 0;
+}
+
+.title-sub-redirect {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #0028da;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-topics {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-members {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Configuração de tags utilizadas e tabelas */
+
+h2 {
+  margin: 2em 0 0.7em 0;
+}
+
+p {
+  margin: 0 0 0 10px;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #c4b36a;
+}
+
+tr:nth-child(odd) {
+  background-color: #e1ce7a;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+
+.footer-text-redirect {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #0028da;
+}
+
+/* Configurando a scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fa90;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ac9969;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #696846;
+}
+
+/* CSS responsivo (celular) */
+@media screen and (max-width: 768px) {
+  main {
+    margin: 0 1.5em 30px 1.5em;
+  }
+
+  .title-text {
+    font-size: 2.3em;
+  }
+
+  .container {
+    display: block;
+  }
+
+  h2 {
+    font-size: 1.7em;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  th,
+  td {
+    display: flex;
+    justify-content: center;
+  }
+}

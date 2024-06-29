@@ -1,0 +1,161 @@
+/* Exportação e configuração das fontes utilizadas */
+
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lexend+Deca:wght@100..900&display=swap");
+
+.italiana-regular {
+  font-family: "Italiana", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lexend-deca {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* CSS padrão */
+
+html {
+  background-color: #fdd692;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 3% 0 3%;
+  font-family: Lexend Deca;
+}
+
+.title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #754f44;
+  height: 4em;
+  border-radius: 10px;
+  margin: 2em 0 0 0;
+}
+
+.title-text {
+  font-family: Italiana;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e1ce7a;
+  width: 50%;
+  height: 2em;
+}
+
+.title-sub {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  margin: 10px 0 0 0;
+}
+
+.title-sub-redirect {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #0028da;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.container {
+  width: 25%;
+  height: auto;
+  background-color: #f4ef88;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 45px 0 45px 0;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: 1s;
+}
+
+.container-link {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  transition: 1s;
+}
+
+.container:hover {
+  margin: 40px -0.6% 25px -1%;
+  width: 26.6%;
+  background-color: #ac9969;
+}
+.container-link:hover {
+  color: whitesmoke;
+}
+
+.container-text {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.container-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Configurando a scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fa90;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ac9969;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #696846;
+}
+
+/* CSS responsivo (celular) */
+@media screen and (max-width: 768px) {
+  main {
+    margin: 0 1.5em 30px 1.5em;
+  }
+
+  .title-text {
+    font-size: 1.5em;
+    width: 100%;
+  }
+
+  .title-sub {
+    font-size: 0.7em;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 80%;
+    margin: 20px 0 20px 0;
+  }
+
+  .container:hover {
+    margin: 20px 0 20px 0;
+    width: 82%;
+    background-color: #a3a05b;
+    color: whitesmoke;
+  }
+}
