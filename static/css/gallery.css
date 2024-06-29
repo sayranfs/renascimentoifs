@@ -25,8 +25,8 @@ html {
   padding: 0;
 }
 
-body {
-  margin: 0 3% 0 3%;
+main {
+  margin: 0 3% 50px 3%;
   font-family: Lexend Deca;
 }
 
@@ -65,18 +65,19 @@ body {
 }
 
 .gallery {
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  columns: 3;
+  padding: 0 0 0 3.3%;
+  margin-top: 25px;
+  column-gap: 0;
 }
 
 .container {
-  width: 25%;
+  width: 83%;
+  break-inside: avoid-column;
   height: auto;
   background-color: #f4ef88;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 45px 0 45px 0;
+  margin: 0 0 25px 0;
   padding: 1rem;
   border-radius: 12px;
   transition: 1s;
@@ -89,10 +90,11 @@ body {
 }
 
 .container:hover {
-  margin: 40px -0.6% 25px -1%;
-  width: 26.6%;
+  margin: 0 -0.6% 25px -1%;
+  width: 85%;
   background-color: #ac9969;
 }
+
 .container-link:hover {
   color: whitesmoke;
 }
@@ -127,10 +129,10 @@ body {
   background: #696846;
 }
 
-/* CSS responsivo (celular) */
-@media screen and (max-width: 768px) {
+/* CSS responsivo (tablet) */
+@media screen and (max-width: 1300px) {
   main {
-    margin: 0 1.5em 30px 1.5em;
+    margin: 0 0.8em 30px 0.8em;
   }
 
   .title-text {
@@ -138,13 +140,50 @@ body {
     width: 100%;
   }
 
-  .title-sub {
-    font-size: 0.7em;
+  .title-sub,
+  .title-sub-redirect {
+    font-size: 0.8em;
   }
 
   .gallery {
-    flex-direction: column;
+    columns: 2;
+    padding: 0 0 0 5.5%;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 0 20px 0;
+  }
+
+  .container:hover {
+    margin: 0 0 17px 0;
+    width: 81%;
+    background-color: #ac9969;
+    color: whitesmoke;
+  }
+}
+
+/* CSS responsivo (celular) */
+@media screen and (max-width: 768px) {
+  main {
+    margin: 0 0.8em 30px 0.8em;
+  }
+
+  .title-text {
+    font-size: 1.5em;
+    width: 100%;
+  }
+
+  .title-sub,
+  .title-sub-redirect {
+    font-size: 0.6em;
+  }
+
+  .gallery {
+    padding: 0;
+    display: flex;
     align-items: center;
+    flex-flow: column wrap;
   }
 
   .container {
@@ -155,7 +194,7 @@ body {
   .container:hover {
     margin: 20px 0 20px 0;
     width: 82%;
-    background-color: #a3a05b;
+    background-color: #ac9969;
     color: whitesmoke;
   }
 }
