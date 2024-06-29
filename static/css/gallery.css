@@ -65,18 +65,17 @@ body {
 }
 
 .gallery {
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  columns: 3;
+  margin-top: 25px;
 }
 
 .container {
-  width: 25%;
+  width: 80%;
+  break-inside: avoid-column;
   height: auto;
   background-color: #f4ef88;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 45px 0 45px 0;
+  margin: 25px 0 25px 0;
   padding: 1rem;
   border-radius: 12px;
   transition: 1s;
@@ -90,7 +89,7 @@ body {
 
 .container:hover {
   margin: 40px -0.6% 25px -1%;
-  width: 26.6%;
+  width: 90%;
   background-color: #ac9969;
 }
 .container-link:hover {
