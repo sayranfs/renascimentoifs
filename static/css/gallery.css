@@ -20,7 +20,12 @@
 /* CSS padrão */
 
 html {
-  background-color: #fdd692;
+  background: rgb(253, 214, 146);
+  background: linear-gradient(
+    180deg,
+    rgba(253, 214, 146, 1) 0%,
+    rgb(222, 205, 127) 100%
+  );
   margin: 0;
   padding: 0;
 }
