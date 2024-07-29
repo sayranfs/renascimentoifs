@@ -3,34 +3,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lexend+Deca:wght@100..900&display=swap");
 
-.italiana-regular {
-  font-family: "Italiana", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.lexend-deca {
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* CSS padrão */
 
 html {
-  background: rgb(253, 214, 146);
   background: linear-gradient(
     180deg,
     rgba(253, 214, 146, 1) 0%,
-    rgb(222, 205, 127) 100%
+    rgb(255, 241, 176) 100%
   );
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
 
 body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
   margin: 0 3% 0 3%;
   font-family: Lexend Deca;
 }
@@ -74,11 +65,7 @@ body {
   justify-content: space-around;
 }
 
-.container-topics {
-  display: flex;
-  flex-direction: column;
-}
-
+.container-topics,
 .container-members {
   display: flex;
   flex-direction: column;
@@ -120,7 +107,8 @@ tr:nth-child(odd) {
 
 .footer-text {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 20px 0 0 0;
 }
 
@@ -128,7 +116,23 @@ tr:nth-child(odd) {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: #0028da;
+  font-size: 1em;
+  color: #ffffff;
+  border: #000 2px solid;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 10px;
+  max-width: 500px;
+  background-color: #754f44;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: shake 2s infinite;
+  transition: 0.7s;
+}
+
+.footer-text-redirect:hover {
+  background-color: #ac9969;
+  font-size: 1.05em;
+  animation-iteration-count: 0;
 }
 
 /* Configurando a scrollbar */
@@ -165,7 +169,7 @@ tr:nth-child(odd) {
   .title-sub-redirect,
   .footer-text,
   .footer-text-redirect {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
 
   .container {
@@ -186,5 +190,17 @@ tr:nth-child(odd) {
   td {
     display: flex;
     justify-content: center;
+  }
+}
+
+@keyframes shake {
+  0% {
+    rotate: 1.5deg;
+  }
+  50% {
+    rotate: -1.5deg;
+  }
+  100% {
+    rotate: 1.5deg;
   }
 }
