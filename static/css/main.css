@@ -1,6 +1,6 @@
 /* Exportação e configuração das fontes utilizadas */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@900&display=swap");
 
 /* CSS padrão */
 
@@ -17,15 +17,14 @@ body {
 }
 
 main, header, main, footer {
-  margin: 0 3% 0 3%;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 3%;
+  font-family: "Montserrat", sans-serif;
 }
 
 menu{
   padding: 0;
 }
 
-footer{}
 
 .menu-bar{
   display: flex;
@@ -44,8 +43,10 @@ footer{}
 }
 
 .menu-bar-link > a:hover{
-  border-bottom: 3px solid white;
+  color: #888C0B;
+  border-bottom: 3px solid #888C0B;
 }
+
 
 .title-div {
   display: flex;
@@ -81,6 +82,44 @@ footer{}
   color: #0028da;
 }
 
+.content{
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.content > h2{
+  font-weight: 600;
+  margin: 5px 0 15px 20px;
+}
+
+/* Configuração de tags utilizadas e tabelas */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #888C0B;
+}
+
+tr:nth-child(odd) {
+  background-color: #9da118;
+}
+
+/*Footer*/
+footer{
+  margin-top: 5%;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -98,6 +137,7 @@ footer{}
 }
 
 .container-title{
+  text-align: center;
   margin: 0 0 20px 0;
 }
 
@@ -107,74 +147,14 @@ footer{}
   color: #888C0B;
   padding-bottom: 10px;
 }
+.container-content:hover{
+  color: white;
+  cursor: pointer;
+}
 
 .container-link:hover{
   color: white;
   text-decoration: underline;
-}
-
-/* Configuração de tags utilizadas e tabelas */
-
-h2 {
-  margin: 2em 0 0.7em 0;
-}
-
-p {
-  margin: 0 0 0 10px;
-}
-
-ul,
-ol {
-  margin: 0;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th,
-td {
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #c4b36a;
-}
-
-tr:nth-child(odd) {
-  background-color: #e1ce7a;
-}
-
-.footer-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0 0 0;
-}
-
-.footer-text-redirect {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 1em;
-  color: #ffffff;
-  border: #000 2px solid;
-  border-radius: 12px;
-  padding: 10px 20px;
-  margin: 10px;
-  max-width: 500px;
-  background-color: #754f44;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation: shake 2s infinite;
-  transition: 0.7s;
-}
-
-.footer-text-redirect:hover {
-  background-color: #ac9969;
-  font-size: 1.05em;
-  animation-iteration-count: 0;
 }
 
 /* Configurando a scrollbar */
@@ -184,18 +164,15 @@ tr:nth-child(odd) {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f8fa90;
+  border: 1px solid white;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ac9969;
+  background: white;
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #696846;
-}
 
 /* CSS responsivo (celular) */
 @media screen and (max-width: 768px) {
