@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -5,41 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/css/main.css" />
     <link rel="icon" href="static/img/ankh.webp" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Renascimento</title>
   </head>
   <body>
+    <header>
+      <menu>
+        <ul class="menu-bar">
+          <li class="menu-bar-link"><a href="index.html"><i class="fi fi-rr-home"></i></a></li>
+          <li class="menu-bar-link"><a href="gallery.html">Galeria</a></li>
+        </ul>
+      </menu>
+    </header>
     <main>
-      <div class="title-div">
-        <h1 class="title-text">RENASCIMENTO</h1>
+        <div id="preview">
+      <img src="https://renascimentoifs.netlify.app/static/img/arts/moca.webp" alt="">
+      <div id="preview-text">
+          <h1 class="title-text">RENASCIMENTO</h1>
+        <p class="title-sub">
+          Gostaria de conhecer nossa galeria após o término de sua leitura!?
+        </p>
+        <span class="material-symbols-outlined">south_east</span>
+        <a class="title-sub-redirect" href="gallery.html">Clique aqui e acesse-a, mas só depois de terminar por aqui hein! ;)</a>
       </div>
-      <p class="title-sub">
-        Gostaria de conhecer nossa galeria após o término de sua leitura!?
-      </p>
-      <a class="title-sub-redirect" href="gallery.html"
-        >Clique aqui e acesse-a, mas só depois de terminar por aqui hein! ;)</a
-      >
-      <div class="container">
-        <div class="container-topics">
-          <h2>TÓPICOS</h2>
-          <ol>
-            <li>Contexto do Renascimento</li>
-            <li>A cultura renascentista</li>
-            <li>Renascimento artístico</li>
-          </ol>
-        </div>
-        <div class="container-members">
-          <h2>MEMBROS</h2>
-          <ul>
-            <li>Sayran Felix</li>
-            <li>Melissa Ribeiro</li>
-            <li>Silas Santos</li>
-            <li>Monaliza Vieira</li>
-            <li>Crislane Correia</li>
-            <li>Lavigne Sophia</li>
-          </ul>
-        </div>
-      </div>
-      <h2>CONTEXTO DO RENASCIMENTO</h2>
+    </div>
+      <div class="content">
+      <h2 id="title-link-ren">CONTEXTO DO RENASCIMENTO</h2>
 
       <p>
         O Renascimento foi um movimento cultural, econômico e político surgido
@@ -57,7 +50,9 @@
         sim, uma diminuição dessas atividades durante a Idade Média. O
         renascimento reformulou a vida medieval e deu início à Idade Moderna.
       </p>
-      <h2>A CULTURA RENASCENTISTA</h2>
+    </div>
+    <div class="content">
+      <h2 id="title-link-cult">A CULTURA RENASCENTISTA</h2>
       <table>
         <tbody>
           <tr>
@@ -99,7 +94,9 @@
           </tr>
         </tbody>
       </table>
-      <h2>RENASCIMENTO ARTÍSTICO</h2>
+    </div>
+    <div class="content">
+      <h2 id="title-link-art">RENASCIMENTO ARTÍSTICO</h2>
       <p>
         Os principais artistas do renascimento foram:
         <b>Leonardo da Vinci, Rafael Sanzio e Michelangelo.</b> O renascimento
@@ -111,14 +108,14 @@
           <tr>
             <th>Humanismo renascentista</th>
             <td>
-              que foi um movimento de glorificação do homem e da natureza
+              Que foi um movimento de glorificação do homem e da natureza
               humana, no século XIV.
             </td>
           </tr>
           <tr>
             <th>Renascimento literário</th>
             <td>
-              deu origem a grandes gênios da literatura, dentre eles: Dante
+              Deu origem a grandes gênios da literatura, dentre eles: Dante
               Alighieri, Maquiavel, Luís de Camarões, Miguel de Cervantes,
               Shakespeare e entre outros…
             </td>
@@ -126,7 +123,7 @@
           <tr>
             <th>Renascimento científico</th>
             <td>
-              foi marcado por importantes descobertas científicas,
+              Foi marcado por importantes descobertas científicas,
               principalmente nos campos da astronomia, da física, da medicina e
               da geografia.
             </td>
@@ -134,17 +131,40 @@
           <tr>
             <th>Renascimento comercial</th>
             <td>
-              todas essas outras inovações só foram possíveis graças ao
+              Todas essas outras inovações só foram possíveis graças ao
               crescimento comercial que houve na Idade Média.
             </td>
           </tr>
         </tbody>
       </table>
-      <p class="footer-text">
-        Gostaria de conhecer nossa GALERIA RENASCENTISTA?
-        <a href="gallery.html" class="footer-text-redirect">CLIQUE AQUI!</a>
-      </p>
-        <br /><br />
+    </div>
+    <div id="container-link-gallery">
+      <span class="material-symbols-outlined" style="color: #888C0B; font-size: 3em;">south_east</span>
+      <a class="title-sub-redirect" href="gallery.html">Clique aqui e acesse a nossa galeria ;)</a>
+    </div>
     </main>
+    <footer>
+      <div class="container-footer">
+        <div class="container-members">
+          <h2 class="container-title">MEMBROS</h2>
+          <ul>
+            <li class="container-content">Sayran Felix</li>
+            <li class="container-content">Melissa Ribeiro</li>
+            <li class="container-content">Silas Santos</li>
+            <li class="container-content">Monaliza Vieira</li>
+            <li class="container-content">Crislane Correia</li>
+            <li class="container-content">Lavigne Sophia</li>
+          </ul>
+        </div>
+        <div class="container-topics">
+          <h2 class="container-title">TÓPICOS</h2>
+          <ul>
+            <li class="container-content"><a class="container-link-footer" href="#title-link-ren">Contexto do Renascimento</a></li>
+            <li class="container-content"><a class="container-link-footer" href="#title-link-cult">A Cultura Renascentista</a></li>
+            <li class="container-content"><a class="container-link-footer" href="#title-link-art">Renascimento Artístico</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
