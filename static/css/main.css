@@ -25,7 +25,6 @@ menu{
   padding: 0;
 }
 
-
 .menu-bar{
   display: flex;
   justify-content: flex-start;
@@ -47,39 +46,50 @@ menu{
   border-bottom: 3px solid #888C0B;
 }
 
-
-.title-div {
+#preview{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #754f44;
-  height: 4em;
-  border-radius: 10px;
-  margin: 2em 0 0 0;
+  justify-content: space-around;
+  margin: 1% 0 1% 0;
+  border: 1px solid white;
+  border-radius: 20px;
 }
 
-.title-text {
-  font-family: Italiana;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #e1ce7a;
-  width: 50%;
-  height: 2em;
+#preview > img{
+  width: 20%;
+  height: auto;
 }
 
-.title-sub {
-  display: flex;
-  justify-content: center;
-  font-size: 1em;
-  margin: 10px 0 0 0;
+#preview-text{
+  width: 60%;
+}
+
+.title-text{
+  font-weight: 500;
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+  color: #888C0B;
+}
+
+.title-sub{
+  font-size: 20px;
+}
+.title-sub, .title-sub-redirect {
+ text-align: center;
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  padding-left: 40px;
+}
+
+.title-sub-redirect:hover{
+  font-weight: 500;
+  color: #888C0B;
+  text-decoration: underline;
 }
 
 .title-sub-redirect {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: #0028da;
+  color: white;
 }
 
 .content{
@@ -91,7 +101,7 @@ menu{
 
 .content > h2{
   font-weight: 600;
-  margin: 5px 0 15px 20px;
+  margin: 15px 0 15px 20px;
 }
 
 /* Configuração de tags utilizadas e tabelas */
