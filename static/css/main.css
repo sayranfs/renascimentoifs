@@ -140,7 +140,7 @@ footer{
   margin-top: 5%;
 }
 
-.container {
+.container-footer {
   display: flex;
   justify-content: space-around;
 }
@@ -161,7 +161,7 @@ footer{
   margin: 0 0 20px 0;
 }
 
-.container-content, .container-link{
+.container-content, .container-link-footer{
   list-style: none;
   text-decoration: none;
   color: #888C0B;
@@ -172,7 +172,7 @@ footer{
   cursor: pointer;
 }
 
-.container-link:hover{
+.container-link-footer:hover{
   color: white;
   text-decoration: underline;
 }
