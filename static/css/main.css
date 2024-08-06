@@ -96,7 +96,7 @@ menu{
   background-color: white;
   border-radius: 20px;
   padding: 15px;
-  margin: 10px 0;
+  margin: 30px 0;
 }
 
 .content > h2{
@@ -123,6 +123,16 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
   background-color: #9da118;
+}
+
+#container-link-gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 30px 0 30px 0;
 }
 
 /*Footer*/
